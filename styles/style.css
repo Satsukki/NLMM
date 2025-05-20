@@ -1,0 +1,27 @@
+html {
+    touch-action: manipulation;
+    background-color: #fff;
+}
+
+body {
+    background-color: #EEEEEE;
+}
+
+header {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+section{
+
+}
+
+h1 {
+    color: black;
+    font-size: 40px ;
+    font-family: 'Arial', sans-serif;
+
+}
+
+
