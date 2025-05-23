@@ -1,79 +1,72 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #1c1c1c;
-    color: white;
+    background-color: white;
+    color: #1c1c1c;
 }
-header {      
-    background-color: #000;
+header {
+    height: 20%;
+    background-color: white;
+    text-align: center;
     padding: 15px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-header nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-}
-.brand-title {
-    text-align: center;
-    padding: 40px 0 10px;
-    font-size: 36px;
-    font-weight: bold;
-}
-.breadcrumb {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #ccc;
-}
-.container {
-    display: flex;
-    padding: 20px 50px;
-    gap: 30px;
-}
-.sidebar {
-    width: 250px;
-    background-color: #2b2b2b;
-    padding: 20px;
-    border-radius: 10px;
-}
-.sidebar h3 {
-    margin-top: 0;
-}
-.sidebar label {
-    display: block;
-    margin: 10px 0;
-}
-.main-content {
-    flex: 1;
-}
-.description {
-    margin-bottom: 20px;
-    color: #ddd;
-}
-.product-grid {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-.product-card {
-    background-color: #333;
-    border-radius: 10px;
-    padding: 15px;
-    width: 200px;
-    text-align: center;
-}
-.product-card img {
+
+.header-main{
+    align-items: center;
     width: 100%;
-    height: auto;
+    height: 10%;
+    padding: 15px 30px;
+    display: flex;
 }
-.add-to-cart {
-    margin-top: 10px;
-    background-color: black;
-    color: white;
-    padding: 8px 12px;
-    border: none;
-    cursor: pointer;
-    border-radius: 6px;
+
+.header-main .heafer-logo {
+    width: 20%;
+    height: 100%;
+    padding: 15px 30px;
+}
+
+.heafer-logo a{
+    font-family: Papyrus, sans-serif ;
+    font-size: clamp(20px, 3vw, 64px)
+}
+
+.header-main .header-menu {
+    width: 50%;
+    height: 100%;
+    padding: 15px 30px;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+.header-main .header-menu .menu-chinh {
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+}
+.menu-chinh li a {
+    gap: 30px;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.menu-chinh li a:hover {
+    color: #a58b6e;
+}
+
+.header-main .header-action {
+    width: 30%;
+    height: 100%;
+    padding: 15px 30px;
 }
