@@ -1,14 +1,15 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: white;
-    color: #1c1c1c;
+    background-image: url("images/backgound2.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin: 0 0;
 }
-header {
-    height: 20%;
-    background-color: white;
+
+
+.header {
+    background-color: rgba(255, 255,255, 0.2);
     text-align: center;
-    padding: 15px 30px;
+    padding: 15px 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -17,26 +18,23 @@ header {
 .header-main{
     align-items: center;
     width: 100%;
-    height: 10%;
-    padding: 15px 30px;
     display: flex;
 }
 
 .header-main .heafer-logo {
-    width: 20%;
-    height: 100%;
-    padding: 15px 30px;
+    width: 15%;
 }
 
 .heafer-logo a{
     font-family: Papyrus, sans-serif ;
-    font-size: clamp(20px, 3vw, 64px)
+    font-size: clamp(20px, 3vw, 52px)
 }
 
 .header-main .header-menu {
     width: 50%;
     height: 100%;
     padding: 15px 30px;
+    margin: 0 3%;
     display: flex;
     list-style-type: none;
     align-items: center;
@@ -54,19 +52,68 @@ header {
 .menu-chinh li a {
     gap: 30px;
     text-decoration: none;
-    color: #333;
-    font-size: 18px;
+    color: black;
+    font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: color 0.3s;
 }
 
 .menu-chinh li a:hover {
-    color: #a58b6e;
+    color: red;
 }
 
 .header-main .header-action {
-    width: 30%;
-    height: 100%;
+    width: 25%;
+    display: flex;
     padding: 15px 30px;
+    align-items: center;
+}
+
+.action-search{
+    width: 70%;
+    padding: 15px 60px;
+}
+
+.search-box{
+    display: inline;
+    background-color: white;
+    border: 2px solid #CCC;
+    border-radius: 30px;
+    padding: 15px 30px;
+}
+.search-box .search {
+    padding: 15px 0;
+    border: none;
+}
+.search-box .search input[type="search"]{
+    border: none;
+    outline: none;
+    width: 90%;
+    height: 100%;
+    font-size: 18px;
+}
+
+.action-button{
+    background: none;
+    margin: 0 10px;
+    border: none;
+    outline: none;
+}
+.action-button:hover{
+    background: rgba(255,0,0,0.1);
+    border-radius: 20px;
+}
+
+.icon{
+    width: 40px;
+    height: 40px;
+}
+
+.main{
+
+}
+
+.footer{
+
 }
