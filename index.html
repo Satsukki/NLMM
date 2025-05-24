@@ -1,24 +1,134 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/style.css">
-  <title>NLMM Perfume</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLMM</title>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            color: #333;
+            background: #f5f3f0; 
+            position: relative;
+            min-height: 100vh;
+        }
+        
+        body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background:
+            linear-gradient(rgba(242, 241, 240, 0.05), rgba(245, 243, 240, 0.05)), 
+            url('https://images.pexels.com/photos/965989/pexels-photo-965989.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center/contain no-repeat;
+        z-index: -1;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 50px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-bottom: 1px solid #eee;
+            backdrop-filter: blur(5px);
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #a58b6e;
+        }
+        
+        .shopping_cart {
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 24px;
+            letter-spacing: 1px;
+        }
+        
+        .language {
+            font-size: 12px;
+            color: #999;
+            margin-top: 5px;
+            text-align: right;
+        }
+           
+        .perfume-names {
+            display: flex;
+            justify-content: center;
+            align-content: flex-end;
+            gap: 50px;
+            flex-wrap: wrap;
+            height: 800px;
+        }
+        
+        .perfume-name {
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 15px 25px;
+            border: 1px solid #ddd;
+            transition: all 0.3s;
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .perfume-name:hover {
+            background-color: #fff;
+            border-color: #a58b6e;
+            color: #a58b6e;
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        } 
+    </style>
 </head>
 <body>
-  <header>
-    <h1>NLMM</h1>
-  </header>
-
-  <section>
     <nav>
-      <button onclick="loadContent('test.html')">1</button>
+        <div class="nav-links">
+            <a href="#">Trang chủ</a>
+            <a href="#">Về NLMM</a>
+            <a href="#">Bộ sưu tập nước hoa</a>
+            <a href="#">Thương hiệu</a>
+            <a href="#">Tin tức</a>
+            <a href="#">Liên hệ</a>
+        </div>
+        <div>
+            <div class="shopping_cart">
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="language">Vietnamese</div>
+        </div>
     </nav>
 
-    <main id="content">
-
-    </main>
-  </section>
+    <div class="perfume-names">
+        <div class="perfume-name">Chanel</div>
+        <div class="perfume-name">Dior</div>
+        <div class="perfume-name">Versace</div>
+        <div class="perfume-name">YSL</div>
+    </div>
 </body>
 </html>
